@@ -1,0 +1,575 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+}
+:root{
+    --secondaryColor:#262859;
+    --primaryColor:#d6c37e;
+    --accent:#4f6182;
+    --accent2:#592627;
+    --white:#ffffe8;
+    --sectionbg:#fffaf0;
+}
+
+h1,h2,h3,h4,h5,h6,nav>ul>li>a{
+    font-family: monospace;
+}
+main{
+    background-color: var(--sectionbg);
+overflow: hidden;
+}
+header{
+background-color: var(--secondaryColor);
+color: var(--primaryColor);
+}
+header>section:nth-child(1){
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    padding-block: 1rem;
+    select{
+        align-self: flex-start;
+    }
+   
+  
+}
+p{
+    font-family: "Poppins", sans-serif;
+    font-size: 0.8rem;
+}
+nav{
+    ul{
+        display: flex;
+        flex-direction: column;
+        gap: 0.05rem;
+        background-color: var(--primaryColor);
+        
+       
+    }
+    ul>li{
+         background-color: var(--accent);
+         width: 100%;
+         text-align: center;
+         padding-block: 0.1rem;
+    }
+    ul>li>a{
+        
+        font-size: 1.2rem;
+        color: white;
+    }
+}
+
+.header_headline>section{
+    margin: auto;
+    position: relative;
+}
+
+.header_headline>section>section>h1{
+    font-size: clamp(2rem, 10vw, 3rem);
+    color: var(--primaryColor);
+    text-align: center;
+   
+}
+
+.header_headline>section>section>h3{
+    font-size: clamp(1.6rem, 6vw, 1.8rem);
+    color: var(--primaryColor);
+    text-align: center;
+}
+
+select{
+    border-radius: 0.3rem;
+    padding: 0.1rem;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+.lind_portrait{
+    display: none;
+}
+
+.book-preview-section{
+    background-color:var(--primaryColor);
+    display: grid;
+    section{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        button{
+        background-color: var(--accent2);
+        margin-block: 0.5rem 1.5rem;
+
+        color: var(--white);
+        padding: 0.5rem 2rem;
+        border: 0;
+        font-family: "Poppins", sans-serif;
+        font-size: 1.2em;
+        text-transform: uppercase;
+        border-radius: 0.5rem;
+        cursor: pointer;
+        letter-spacing: 0.15rem;
+    }
+
+    h2{
+        font-family: "Poppins", sans-serif;
+        font-weight: 600;
+        font-size: 1.7rem;
+        font-style: italic;
+        text-align: center;
+    }
+    p{
+        font-family: "Poppins", sans-serif;
+        font-size: 1.2rem;
+        text-align: center;
+    }
+    }
+    img{
+        padding: 0.5rem;
+        background-color: white;
+        border-radius: 0.5rem;
+        margin-block: 1rem 0.5rem;
+        margin-inline: auto;
+    }
+}
+
+.bio-quote{
+    background-color: var(--accent);
+    color: white;
+    border-radius: 0.5rem;
+    padding: 0.5rem;
+    p:nth-child(1){
+        text-align: center;
+        margin-bottom: 1.5rem;
+        font-style: italic;
+    }
+ p:nth-child(2){
+        text-align: end;
+    }
+}
+.bio-section{
+    padding: 1rem 0.5rem;
+    display: grid;
+    
+    section:nth-child(1){
+        display: grid;
+        gap: 1rem;
+        line-height: 1.25rem;
+    }
+    section:nth-child(2){
+        gap: 1rem;
+        line-height: 1.25rem;
+    }
+}
+
+.date::before{
+    content: url(./assets/img/microphone.png) " ";
+}
+
+.bio-section-images{
+    display: none;
+    margin-inline: auto;
+}
+
+article>section>h5{
+    font-size: clamp(0.3rem, 0.9vw, 1rem);
+}
+/* article>section>p{
+    font-size: clamp(0.6rem, 0.7vw, 1rem);
+} */
+
+.headline-section{
+    h2{
+    background-color: var(--accent);
+    color: var(--primaryColor);
+    padding: 1rem;
+    font-size: 2rem;
+    margin-block: 1rem;
+    }
+    img{
+    padding: 1rem;
+    }
+
+}
+
+.go-to-top{
+    display: flex;
+    justify-content: end;
+    padding-right: 1.5rem;
+}
+
+.tours{
+    padding-inline: 1rem;
+    display: grid;
+    gap: 1rem;
+    article{
+    border-bottom: solid 1px var(--primaryColor);
+    margin-bottom: 1rem;
+    p:nth-child(2){
+        font-weight: 600;
+        color: var(--secondaryColor);
+    }
+    .tour-role{
+        color: var(--accent2);
+        font-weight: 600;
+    }
+    p:last-child{
+        margin-bottom: 1rem;
+    }
+    }
+}
+
+.books-section{
+    display: grid;
+    padding-inline: 1rem;
+    
+    article{
+        display: grid;
+        border-bottom: solid 1px var(--primaryColor);
+        img{
+            margin-inline: auto;
+        }
+    }
+}
+
+.book-description{
+    margin-bottom: 1rem;
+    h4{
+        font-size: 0.8rem;
+        font-family: "Poppins", sans-serif;
+        font-weight: 600;
+        margin-bottom: 1rem;
+        span{
+            font-weight: 400;
+        }
+    }
+    h3{
+        font-size: 1.3rem;
+       
+    }
+}
+.headline-section:nth-child(4){
+    h2{
+        margin-bottom: 1rem;
+    }
+}
+.conference{
+    img{
+        display: none;
+    }
+}
+.contact-section{
+    padding-inline: 1rem;
+    
+    section{
+        section{
+            display: grid;
+            padding-bottom: 1rem;
+            img{
+                border-radius: 50%;
+                width: 150px;
+                margin-inline: auto;
+            }
+            section{
+                h3{
+                    font-size:1.4rem ;
+                    margin-bottom: 1rem;
+                }
+                >:not(h3){
+                    margin-bottom: 0.3rem;
+                }
+            }
+        }
+        section:nth-child(1){
+            border-bottom: solid 1px var(--primaryColor);
+            
+        }
+        
+    }
+}
+
+fieldset{
+    border: 1px solid black;
+    border-radius: 0.5rem;
+    padding: 1rem;
+    button{
+        padding: 0.5rem;
+        border-radius: 0.5rem;
+    }
+   
+}
+
+footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+   section{
+    margin-bottom: 1rem;
+   }
+    .soMe{
+        display: flex;
+        justify-content: center;
+        gap: 0.2rem;
+        img{
+            border-radius: 50%;
+
+        }
+       
+    }
+    .kea-pub{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    background-color: var(--secondaryColor);
+   p{
+    color: var(--white);
+   }
+   >p{
+    color: var(--primaryColor);
+   }
+    span{color: var(--primaryColor);}
+    padding: 1rem;
+    text-align: center;
+}
+
+@media(min-width:640px){
+.lind_portrait{
+    display: block;
+    width: 10%;
+    border-radius: 50%;
+}
+header>section:nth-child(1){
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    select{
+        align-self: center;
+        font-size: 1.3rem;
+    }
+ 
+}
+/* .header_headline>section>section>h1{
+    font-size: 2.5rem;
+} */
+
+/* .header_headline>section>section>h3{
+    font-size: 1.6rem;
+} */
+nav>ul{
+    flex-direction: row;
+    gap: 0rem;
+    li{
+        padding: 0.5rem;
+    }
+}
+
+header>section>section{
+    display: contents;
+}
+
+.book-preview-section{
+    grid-template-columns: 8fr 1.5fr;
+    align-items: center;
+    gap: 1rem;
+    padding-inline: .5rem;
+    section{
+        padding: 1rem;
+        button{
+            padding: 1rem 3.5rem;
+            font-size: 1.5rem;
+            margin-bottom: 3rem;
+        }
+    }
+    img{
+        width: 100%;
+        margin-block: 0.5rem;
+    }
+}
+.books-section{
+    article{
+        grid-template-columns: 2fr 1fr;
+        gap: 1rem;
+        img{
+           order: 1;
+        }
+    }
+}
+
+.contact-section{
+  
+    section{
+        form{
+            fieldset{
+            
+                overflow: hidden;
+                section{
+                  display: grid;
+                  textarea{
+                      min-height: 5rem;
+                      max-width: 100%;
+                    
+                  }
+                }
+            }
+        }
+        section{
+          display: flex;
+          align-items: center;
+          img{
+            margin-inline: 0;
+          }
+          section{
+            display: block;
+          }
+        }
+        
+    }
+}
+
+footer{
+    p{
+        font-size: 0.8rem;
+        margin-bottom: 0.2rem;
+    }
+  >section{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    width: 100%;
+    justify-content: space-between;
+  }
+  .kea-pub{
+    display: block;
+    text-align: start;
+  }
+  .soMe{
+    justify-content: flex-start;
+  }
+  .footer-credits{
+    text-align: right;
+  }
+}
+
+
+
+}
+
+@media(min-width:1000px){
+    .book-preview-section{
+    grid-template-columns: 12fr 2.5fr;
+ section{
+        button{
+            padding: 1.2rem 7rem;
+            font-size: 1.7rem;
+            margin-bottom: 3rem;
+        }
+        h2{
+            font-size: 2.5rem;
+        }
+        p{
+            font-size: 1.5rem;
+        }
+    }
+   
+}
+.bio-section{
+    grid-template-columns: 85% 15%;
+      
+}
+.bio-section-images{
+    display: flex;
+    text-align: center;
+    img{
+        width: 100%;
+        max-height: 150px;
+        object-fit: cover;
+    }
+    
+}
+.img-section-2{
+    display: none;
+}
+.conference{
+    img{
+        display: block;
+        width: 80%;
+    }
+}
+.contact-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+}
+}
+@media(min-width:1200px){
+    body{
+        margin-inline: 5rem;
+    }
+.book-preview-section{
+    grid-template-columns: 12fr 1.5fr;
+    section{
+        button{
+            padding: 1.5rem 8rem;
+            font-size: 2rem;
+            margin-bottom: 3rem;
+        }
+        h2{
+            font-size: 3rem;
+        }
+        p{
+            font-size: 1.7rem;
+        }
+    }
+
+ 
+}
+ .bio-section{
+    grid-template-columns: 75% 25%;
+      
+}
+.bio-section>section:nth-child(1){
+    padding-right: 2rem;
+}
+.bio-section-images{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+}
+.img-section-2{
+    display: grid;
+}
+.tours{
+grid-template-columns: 1fr 1fr;
+    article{
+    padding: 0.5rem;
+    border: solid 1px var(--primaryColor);
+    border-radius: 0.5rem;
+    }
+}
+.books-section{
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+    article{
+        padding: 0.5rem;
+        border: solid 1px var(--primaryColor);
+        border-radius: 0.5rem;
+    }
+}
+.conference{
+    img{
+        display: block;
+        width: 80%;
+    }
+}
+}
